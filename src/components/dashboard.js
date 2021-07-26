@@ -41,7 +41,7 @@ const Jobs = [
 
     {
         id:2,
-        jobTitle: "Clerk Needed Urgently",
+        jobTitle: "Clerk Needed Urgently at the community for immediate employment",
         datePosted: `${date}-${month}-${year}`
 
         
@@ -57,7 +57,7 @@ const Jobs = [
 
     {
         id:4,
-        jobTitle: "Youth Empowerment Program",
+        jobTitle: "HSE Officers recruitment in Dandee Organisation ",
         datePosted: `${date}-${month}-${year}`
 
     
@@ -91,18 +91,18 @@ const Profile = () => {
 
             <div className="form">
                 <form action="">
-                    <input type="text" placeholder="First Name"></input>
-                    <input style={{marginLeft:"1rem"}} type="text" placeholder="Last Name"></input><br></br>
-                    <input style={{width:"100%"}} type="text" placeholder="Residential Address"></input><br></br>
-                    <input type="text" placeholder="State"></input>
-                    <input style={{marginLeft:"1rem"}} type="text" placeholder="City"></input><br></br>
-                    <label>
+                    <input type="text" placeholder="First Name"></input><br></br>
+                    <input type="text" placeholder="Last Name"></input><br></br>
+                    <input type="text" placeholder="Residential Address"></input><br></br>
+                    <input type="text" placeholder="State"></input><br></br>
+                    <input type="text" placeholder="City"></input><br></br>
+                    <label style={{fontSize:".8rem"}}>
                         Date of Birth <br></br>
                         <input type="number" placeholder="DD/MM/YYYY"></input>
                     </label>
-                    <input  style={{marginLeft:"1rem"}} type="number" placeholder="Phone Number"></input><br></br>
+                    <input  type="number" placeholder="Phone Number"></input><br></br>
                     
-                    <select style={{ width:"38%"}}>
+                    <select style={{ width:"100%"}}>
                         <option disabled selected value="Gender">Gender</option>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
@@ -143,6 +143,7 @@ const Resume = () => {
                         <option>O'Level</option>
                         <option>B.Sc</option>
                         <option>M.sc</option>
+                        <option>Phd</option>
                         <option>University Undergraduate</option>
                     </select><br></br>
 
@@ -273,7 +274,7 @@ const JobAlert = () => {
                 ))}
             </div>
 
-            <p style={{marginTop:"3rem", cursor:"pointer"}} className="jobAlert-header">View More</p>
+            <p className="job-viewMore">View More</p>
 
         </section>
     )
@@ -319,6 +320,7 @@ const Dashboard = () => {
     const [showMenu, setShowMenu] = useState(false)
 
     let menu
+    let menuMask
     if(showMenu) {
         menu = <div className="hamburger-menu">
            <ul>
@@ -339,6 +341,8 @@ const Dashboard = () => {
                 </li>
            </ul>
         </div>
+
+       menuMask = <div className="menuMask" onClick={() => setShowMenu(false)}></div>
     }
 
     return (
@@ -373,6 +377,7 @@ const Dashboard = () => {
                         <div onClick={() => setShowMenu(!showMenu)}>
                         <span className="fa fa-bars"></span>
                         </div>
+                        {menuMask}
                         {menu}
                     </nav>
                 </div>
@@ -409,11 +414,11 @@ const Dashboard = () => {
                 
             </div>
 
-            <div style={{backgroundColor:"whitesmoke"}} className="copyright">
+            <div style={{backgroundColor:"whitesmoke", fontSize:".8rem"}} className="copyright">
            <p >&copy; Copyright 2021. Amukpe Community</p>
            
        </div>
-       <div style={{lineHeight: ".9rem", color: "grey", textAlign: "right", backgroundColor: "black", fontSize: ".8rem", padding: ".5rem 2rem .5rem 0rem"}}><p>Developed by Giffy Insight Technologies.</p>
+       <div style={{lineHeight: ".9rem", color: "grey", textAlign: "right", backgroundColor: "black", fontSize: ".7rem", padding: ".5rem 2rem .5rem 0rem"}}><p>Developed by Giffy Insight Technologies.</p>
          <p>Tel : 09013970506 </p>
         </div>
         </section>
