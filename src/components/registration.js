@@ -19,7 +19,7 @@ const Registration = () => {
                     <div>
                         <ul>
                             <li>
-                                <Link style={{textDecoration:"none", color:"white"}} to="/home"><span className="fa fa-home"></span>&nbsp;Back Home</Link>
+                                <Link style={{textDecoration:"none", color:"white"}} to="/"><span className="fa fa-home"></span>&nbsp;Back Home</Link>
                             </li>
                         </ul>
                     </div>

@@ -21,7 +21,7 @@ const Login = () => {
                     <div>
                         <ul>
                             <li>
-                                <Link style={{textDecoration:"none", color:"white"}} to="/home"><span className="fa fa-home"></span>&nbsp;Back Home</Link>
+                                <Link style={{textDecoration:"none", color:"white"}} to="/"><span className="fa fa-home"></span>&nbsp;Back Home</Link>
                             </li>
                         </ul>
                     </div>
@@ -57,6 +57,8 @@ const Login = () => {
                     </div>
 
                 </div>
+
+                <Link to="/dashboard">Dashboard</Link>
             </div>
 
             <p style={{textAlign:"center", fontSize:".8rem", padding:".5rem", background:"whitesmoke"}}>&copy; Copyright 2021 Amukpe Community.</p>
