@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import About from './components/about';
 import Blog from './components/blog';
-import JobOpenings from './components/contact';
+import JobOpenings from './components/jobOpenings';
 import Contact from './components/contact';
 import Dashboard from './components/dashboard';
 import Footer from './components/footer';

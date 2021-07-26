@@ -177,7 +177,7 @@ const NavJobs = () => {
                         ))}
                     </div>
 
-                    <a style={{textDecoration:"none"}} href="" className="profile-btn">Find Jobs</a>
+                    <Link style={{textDecoration:"none",color:"white"}} to="/jobopenings" className="profile-btn">Find Jobs</Link>
                         
                     
                 </div>
@@ -225,7 +225,7 @@ const UserNavigation = () => {
         <div className="userNav">
             <div className="user-header">
                 <div>
-                    <img className="avatarIcon" src={avatarIcon2}></img>
+                    <img alt="#" className="avatarIcon" src={avatarIcon2}></img>
                 </div>
                 <div>
                     <h4>{userFirstname}</h4>
@@ -266,7 +266,7 @@ const JobAlert = () => {
                 <p className="jobAlert-header">Job Alerts</p>
                 {Jobs.map(jobpost => (
                     <div>
-                        <a style={{textDecoration:"none", color:"black"}} href=""><h4 className="job-post">{jobpost.jobTitle}</h4></a>
+                        <Link to="/jobopenings" style={{textDecoration:"none", color:"black"}} href=""><h4 className="job-post">{jobpost.jobTitle}</h4></Link>
                         <h6>{jobpost.datePosted}</h6>
 
                     </div>                  
@@ -353,16 +353,16 @@ const Dashboard = () => {
                     <div>
                         <ul>
                             <li>
-                                <a><span className="fa fa-home"></span>&nbsp;Home</a>
+                                <Link style={{textDecoration:"none", color:"white"}} to="/home" ><span className="fa fa-home"></span>&nbsp;Home</Link>
                             </li>
                             <li>
                                 <a style={{textDecoration:"none", color:"white"}} href="#mainDashboard"><span className="fa fa-address-card">&nbsp;</span>Dashboard</a>
                             </li>
                             <li>
-                                <a><span className="fa fa-wrench"></span>&nbsp;Settings</a>
+                                <a style={{textDecoration:"none", color:"white"}} href="#settings"><span className="fa fa-wrench"></span>&nbsp;Settings</a>
                             </li>
-                            <li>
-                                <a style={{color:"lime"}}> <span className="fa fa-circle">&nbsp;Active</span></a>
+                            <li style={{color:"lime"}}>
+                                 <span className="fa fa-circle">&nbsp;Active</span>
                             </li>
                         </ul>
                     </div>
@@ -380,7 +380,7 @@ const Dashboard = () => {
 
             <div className="user-profile">
                 <div>
-                    <img className="avatarIcon" src={avatarIcon2}></img>
+                    <img alt="#" className="avatarIcon" src={avatarIcon2}></img>
                 </div>
                 <div className="user-name">
                     <h4>{userFirstname}</h4>
