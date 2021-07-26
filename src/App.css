@@ -738,7 +738,7 @@
         margin-left: 2rem;
         line-height: 1.7rem;
     }
-    .jobAlert {width: 100%; }
+    .jobAlert {width: 100%;display: block; }
     .job-alert{width: 100% !important;margin: 0rem; padding: 1rem;}
 
     .dashboard-details{
