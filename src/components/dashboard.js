@@ -335,7 +335,7 @@ const Dashboard = () => {
                     <a href="#resume" style={{textDecoration:"none", color:"white"}}><span  className="fa fa-wrench"></span>&nbsp;CV</a>
                 </li>
                 <li>
-                <a style={{textDecoration:"none", color:"white"}} href="settings"><span className="fa fa-wrench"></span>&nbsp;Account settings</a>
+                <a style={{textDecoration:"none", color:"white"}} href="#settings"><span className="fa fa-wrench"></span>&nbsp;Account settings</a>
                 </li>
            </ul>
         </div>
