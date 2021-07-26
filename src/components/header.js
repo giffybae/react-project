@@ -36,8 +36,8 @@ const Header = () => {
                 </div>
 
                 <div className="sign-btn">
-                    <Link style={{textDecoration:"none", color:"white"}} to="login"><button>SIGN IN</button></Link>
-                    <Link style={{textDecoration:"none", color:"white"}} to="login"><button>SIGN UP</button></Link>
+                    <Link style={{textDecoration:"none", color:"white"}} to="/login"><button>SIGN IN</button></Link>
+                    <Link style={{textDecoration:"none", color:"white"}} to="/registration"><button>SIGN UP</button></Link>
                     
                 </div>
             </div>
