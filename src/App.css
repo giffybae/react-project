@@ -439,7 +439,9 @@
     border-radius: .8rem;
 
 }
-
+.dash-component{
+    display: flex;
+}
 /* USERNAVIGATION AREA */
 .avatarIcon {
     width: 4rem;
@@ -659,6 +661,61 @@
     border-radius: .5rem;
     height: 2rem;
     text-indent: 1rem;
+}
+
+/* HMABURGER MENU */
+.fa-bars {display: none;}
+.hamburger-menu {
+    position: fixed;
+    background-color: #50062a;
+    padding: 2rem;
+    top: 0;
+    left: 0;
+    width: 50%;
+    z-index: 5;
+    height: 100vh;
+}
+.hamburger-menu ul li {
+    list-style: none;
+    margin-bottom: 5rem;
+}
+
+.user-profile {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .fa-bars{display: block;}
+    .dashboardNav {display: none;}
+    .page-header {justify-content: space-between;}
+    .userNav{display: none;}
+    .dashboard-component{flex-direction: column;
+    margin: 0rem; width: 100%;}
+    .dash-component{flex-direction: column;}
+    .mainDashboard{width: 100%; margin-top: 1rem;}
+    .user-active{display: none;}
+    .navJobs{width: 100%;
+    margin-top: 1rem;}
+    .user-profile{
+        display: block;
+        display: flex;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    .user-name {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        line-height: 1.7rem;
+    }
+    .jobAlert {width: 100%; }
+    .job-alert{width: 100% !important;margin: 0rem; padding: 1rem;}
+
+    .dashboard-details{
+        flex-direction: column;
+    }
+    .job-details{width: 100%;
+        margin-top: 2rem;
+    }
 }
 
 /* RESPONSIVENESS FOR DASHBOARD PAGE */

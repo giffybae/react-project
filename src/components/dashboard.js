@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react';
+import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import avatarIcon2 from '../Images/avatarIcon2-bg.png';
 
 const username = "Michelle";
@@ -9,6 +10,7 @@ const year = now.getFullYear();
 const date = now.getDate();
 
 console.log(now)
+
 
 const appliedJobs = [
     {
@@ -27,6 +29,7 @@ const appliedJobs = [
         jobTitle: 'Accountant Position in a private hospital'
     },
 ]
+const noJobsApplied = appliedJobs.length;
 
 const Jobs = [
     {
@@ -254,8 +257,8 @@ const UserNavigation = () => {
 
 const JobAlert = () => {
     return (
-        <section>
-            <div>
+        <section className="jobAlert">
+            <div className="user-active">
                 <p style={{textAlign:"right"}}><span className="fa fa-user"></span>&nbsp; {username}</p>
             </div>
 
@@ -289,10 +292,10 @@ const MainDashboard = () => {
                 <div className="job-details">
                     <h5>Jobs Applied To</h5>
                     <div className="jobs-applied">
-                        <p>4</p>
+                        <p>{noJobsApplied}</p>
                         <span  className="fa fa-briefcase fa-2x"></span>
                     </div>
-                    <p  style={{textAlign:"center",fontSize:".8rem"}}>More <span className="fa fa-arrow-right"></span></p>
+                    <a style={{textDecoration:"none", color:"black"}} href="#jobs"><p  style={{textAlign:"center",fontSize:".8rem"}}>More <span className="fa fa-arrow-right"></span></p></a>
                 </div>
 
                 <div className="job-details">
@@ -313,14 +316,40 @@ const MainDashboard = () => {
 }
 
 const Dashboard = () => {
+    const [showMenu, setShowMenu] = useState(false)
+
+    let menu
+    if(showMenu) {
+        menu = <div className="hamburger-menu">
+           <ul>
+               <li>
+                   <Link style={{textDecoration:"none", color:"white"}} to="/home"><span className="fa fa-home"></span>&nbsp;&nbsp;&nbsp;&nbsp;Home</Link>
+               </li>
+               <li>
+                    <a style={{textDecoration:"none", color:"white"}} href="#mainDashboard"><span className="fa fa-address-card">&nbsp;</span>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#profile" style={{textDecoration:"none", color:"white"}}><span  className="fa fa-wrench"></span>&nbsp;Profile</a>
+                </li>
+                <li>
+                    <a href="#resume" style={{textDecoration:"none", color:"white"}}><span  className="fa fa-wrench"></span>&nbsp;CV</a>
+                </li>
+                <li>
+                <a style={{textDecoration:"none", color:"white"}} href="settings"><span className="fa fa-wrench"></span>&nbsp;Account settings</a>
+                </li>
+           </ul>
+        </div>
+    }
+
     return (
         <section>
+            
             <div className="page-header">
                 <div>
                     <h1>Amukpe Community</h1>
                 </div>
 
-                <div className="nav-list">
+                <div className="nav-list dashboardNav">
                     <div>
                         <ul>
                             <li>
@@ -338,13 +367,32 @@ const Dashboard = () => {
                         </ul>
                     </div>
                 </div>
+
+                <div>
+                    <nav>
+                        <div onClick={() => setShowMenu(!showMenu)}>
+                        <span className="fa fa-bars"></span>
+                        </div>
+                        {menu}
+                    </nav>
+                </div>
+            </div>
+
+            <div className="user-profile">
+                <div>
+                    <img className="avatarIcon" src={avatarIcon2}></img>
+                </div>
+                <div className="user-name">
+                    <h4>{userFirstname}</h4>
+                    <div style= {{color:"lime"}}><span className="fa fa-circle">&nbsp;Online</span></div>
+                </div>
             </div>
             <div className="dashboard-component">
                 <div>
                     <UserNavigation/>
                 </div>
                 
-                <div style={{display:"flex"}}>
+                <div className="dash-component">
                     <div>
                     <MainDashboard/>
                     <Profile/>
