@@ -323,7 +323,7 @@ const Dashboard = () => {
         menu = <div className="hamburger-menu">
            <ul>
                <li>
-                   <Link style={{textDecoration:"none", color:"white"}} to="/home"><span className="fa fa-home"></span>&nbsp;&nbsp;&nbsp;&nbsp;Home</Link>
+                   <Link style={{textDecoration:"none", color:"white"}} to="/"><span className="fa fa-home"></span>&nbsp;&nbsp;&nbsp;&nbsp;Home</Link>
                </li>
                <li>
                     <a style={{textDecoration:"none", color:"white"}} href="#mainDashboard"><span className="fa fa-address-card">&nbsp;</span>Dashboard</a>
@@ -353,7 +353,7 @@ const Dashboard = () => {
                     <div>
                         <ul>
                             <li>
-                                <Link style={{textDecoration:"none", color:"white"}} to="/home" ><span className="fa fa-home"></span>&nbsp;Home</Link>
+                                <Link style={{textDecoration:"none", color:"white"}} to="/" ><span className="fa fa-home"></span>&nbsp;Home</Link>
                             </li>
                             <li>
                                 <a style={{textDecoration:"none", color:"white"}} href="#mainDashboard"><span className="fa fa-address-card">&nbsp;</span>Dashboard</a>

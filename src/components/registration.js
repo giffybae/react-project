@@ -12,7 +12,7 @@ const Registration = () => {
 
             <div className="page-header">
                 <div>
-                    <Link style={{textDecoration:"none", color:"white"}} to="/home"><h1>Amukpe Community</h1></Link>
+                    <Link style={{textDecoration:"none", color:"white"}} to="/"><h1>Amukpe Community</h1></Link>
                 </div>
 
                 <div className="nav-list">

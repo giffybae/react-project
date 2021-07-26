@@ -15,7 +15,7 @@ const Header = () => {
                 <div>
                     <ul>
                         <li>
-                            <Link  to="/home" style={{textDecoration:"none", color:"white"}}>Home</Link>
+                            <Link  to="/" style={{textDecoration:"none", color:"white"}}>Home</Link>
                         </li>
                         <li>
                         <Link  to="/about" style={{textDecoration:"none", color:"white"}}>About</Link>
@@ -36,8 +36,9 @@ const Header = () => {
                 </div>
 
                 <div className="sign-btn">
-                    <button>SIGN IN</button>
-                    <button>SIGN UP</button>
+                    <Link style={{textDecoration:"none", color:"white"}} to="login"><button>SIGN IN</button></Link>
+                    <Link style={{textDecoration:"none", color:"white"}} to="login"><button>SIGN UP</button></Link>
+                    
                 </div>
             </div>
 

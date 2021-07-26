@@ -29,7 +29,7 @@ const App = () => {
                 <Route exact path = "/forgotpassword" component={ForgotPassword}>      
                     <ForgotPassword/>
                 </Route>
-                <Route exact path = "/home" component={Homepage}>
+                <Route exact path = "/" component={Homepage}>
                     <Header/>
                     <Homepage/>
                     <Footer/>
