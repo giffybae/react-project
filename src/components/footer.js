@@ -10,7 +10,7 @@ const Footer = () => {
         <section >
             <div className="footer-section">
             <div className="footer-content">
-                <h3>What We Are</h3>
+                <h3 style={{marginBottom:"1rem"}}>What We Are</h3>
                 <p style={{paddingRight: "1rem"}}>
                     Amukpe Community is established to bring support to the less privilege and to put smiles on
                     the poor widows and orphans.
@@ -30,23 +30,23 @@ const Footer = () => {
                     <div>
                         <ul>
                             <li>
-                                <a href="/home">Home</a>
+                                <a href="/">Home</a>
                             </li>
 
                             <li>
-                                <a href="/home">About</a>
+                                <a href="/about">About</a>
                             </li>
 
                             <li>
-                                <a href="/home">Blog</a>
+                                <a href="/blog">Blog</a>
                             </li>
 
                             <li>
-                                <a href="/home">Sign In</a>
+                                <a href="/login">Sign In</a>
                             </li>
 
                             <li>
-                                <a href="/home">Job Openings</a>
+                                <a href="/services">Services</a>
                             </li>
                         </ul>
                     </div>
@@ -55,20 +55,18 @@ const Footer = () => {
                         <ul>
 
                             <li>
-                                <a href="/home">Jobs</a>
+                                <a href="/jobopenings">Jobs</a>
                             </li>
 
                             <li>
-                                <a href="/home">Contact</a>
+                                <a href="/contact">Contact</a>
                             </li>
 
                             <li>
-                                <a href="/home">Sign Up</a>
+                                <a href="/registration">Sign Up</a>
                             </li>
 
-                            <li>
-                                <a href="/home">Support</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>

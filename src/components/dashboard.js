@@ -375,7 +375,7 @@ const Dashboard = () => {
                 <div>
                     <nav>
                         <div onClick={() => setShowMenu(!showMenu)}>
-                        <span className="fa fa-bars"></span>
+                        <span className="fa fa-bars dashboard-menu"></span>
                         </div>
                         {menuMask}
                         {menu}

@@ -14,7 +14,7 @@ const Login = () => {
 
             <div className="page-header">
                 <div>
-                    <Link style={{textDecoration:"none", color:"white"}} to="/"><h1>Amukpe Community</h1></Link>
+                    <Link style={{textDecoration:"none", color:"white"}} to="/"><h3>Amukpe Community</h3></Link>
                 </div>
 
                 <div className="nav-list">
@@ -49,7 +49,7 @@ const Login = () => {
                     </div>
 
                     <div>
-                        <a style={{textDecoration:"none"}} href="/"><p className="forgot-pw">Forgot password? </p></a>
+                        <a style={{textDecoration:"none"}} href="/forgotpassword"><p className="forgot-pw">Forgot password? </p></a>
 
                         <button className="continue-btn">Continue</button> 
                         <p className="new-member">New Member?</p>

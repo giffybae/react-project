@@ -21,14 +21,14 @@ const ForgotPassword = () => {
                     <div>
                         <ul>
                             <li>
-                                <Link style={{textDecoration:"none", color:"white"}} to="/home"><span className="fa fa-home"></span>&nbsp;Back Home</Link>
+                                <Link style={{textDecoration:"none", color:"white"}} to="/"><span className="fa fa-home"></span>&nbsp;Back Home</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="forgotPassword-container">
-                <p>Forgot your password?</p>
+                <p style={{fontSize:"1.5rem"}}>Forgot your password?</p>
                 <p style={{marginTop:"1rem"}}>Enter your Email Address below to reset your Password.</p>
                 
                     <input className="forgotpass" type="text" placeholder="Email Address" ></input>

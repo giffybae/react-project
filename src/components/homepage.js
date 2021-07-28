@@ -62,9 +62,7 @@ const Jobs = () => {
     return (
         <section>
             <div className="job-banner">
-                <div className="community-svg">
-                        <img alt="#" src={jobSvg}></img>
-                </div>                
+                               
 
                 <div className="achievement-content">
                     <h3>Looking for a Job?</h3>
@@ -77,6 +75,10 @@ const Jobs = () => {
                     <button className="view">Apply</button>
                 </div>
 
+                <div className="community-svg">
+                        <img alt="#" src={jobSvg}></img>
+                </div> 
+
                 
             </div>
         </section> 
@@ -86,16 +88,17 @@ const Jobs = () => {
 
 const Homepage = () => {
     return (
-        <section>
+        <section className="hompage-section">
             <div className="banner">
                 <div className="banner-content">
                     <h1>Amukpe Community</h1>
                     <p>Creating Awareness and Opportunities in Amukpe Community. </p>
                     <p>{motto}</p>
+                    
                     <div className="banner-btn">
     
-                    <button className="portal-btn">Portal</button>
-                        <Link  to="/blog" style={{textDecoration:"none", color:"white"}}><button className="latest-update-btn">Latest Updates</button></Link>
+                        <Link  style={{color:"white",textDecoration:"none"}} className="portal-btn" to="/login">Portal</Link>
+                        <Link  to="/blog" style={{color:"#3a011d", textDecoration:"none"}} className="latest-update-btn">Latest Updates</Link>
                     </div>
                 </div>
 
@@ -105,8 +108,8 @@ const Homepage = () => {
 
                 
             </div>
-            <Achievements/>
             <About/>
+            <Achievements/>
             <Jobs/>
         </section>
     )
